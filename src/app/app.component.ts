@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { faGithub, faLinkedin, faAngular } from '@fortawesome/free-brands-svg-icons';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faHome } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
@@ -15,4 +15,12 @@ export class AppComponent {
   faLinkedin = faLinkedin;
   faEnvelope = faEnvelope;
   faAngular = faAngular;
+  faHome = faHome;
+  sidebarOpen = true;
+
+  toggleSidebar() {
+    const opposite = !this.sidebarOpen;
+    this.sidebarOpen = opposite;
+  }
+
 }

@@ -24,9 +24,34 @@
     flex: 1;
   }
 
-  .white-icon {
-    color: white;
-    padding: 0 20px 0 0;
+  .main-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .content-display-container {
+    flex: 1;
+  }
+
+  mat-list-item.disabled{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  mat-list-item.disabled:hover{
+    background: white !important;
+  }
+
+  .no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   .toolbar {
@@ -223,10 +248,14 @@
   }
 
   footer {
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-    line-height: 20px;
+    background-color: #263238;
+    color: white;
+    border-top: 1px solid rgb(0, 0, 0);
+    height: 40px;
+    padding: 20px 10px 0px 10px;
+    user-select: none;
+    margin: 0;
+    font-family: Roboto, 'Helvetica Neue', sans-serif;
   }
 
   footer a {

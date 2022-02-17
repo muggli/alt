@@ -1,0 +1,98 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$awn-application-server-primary: mat-palette($mat-indigo);
+$awn-application-server-accent: mat-palette($mat-blue, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$awn-application-server-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$awn-application-server-theme: mat-light-theme(
+  (
+    color: (
+      primary: $awn-application-server-primary,
+      accent: $awn-application-server-accent,
+      warn: $awn-application-server-warn
+    )
+  )
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($awn-application-server-theme);
+
+// DEFINING AN ALTERNATE DARK THEME (DARK GRAY TOOLBAR AND FOOTER)
+$dark-primary: mat-palette($mat-blue-grey, 800);
+$dark-accent: mat-palette($mat-grey);
+$dark-warn: mat-palette($mat-red);
+$dark-theme: mat-dark-theme(
+  (
+    color: (
+      primary: $dark-primary,
+      accent: $dark-accent,
+      warn: $dark-warn
+    )
+  )
+);
+
+// Include the dark color styles inside of a block with a CSS class. You can make this
+// CSS class whatever you want. In this example, any component inside of an element with
+// `.unicorn-dark-theme` will be affected by this alternate dark theme instead of the default theme.
+.dark-theme {
+  @include angular-material-color($dark-theme);
+}
+
+// DEFINING A TOGGLE ON OFF THEME (GREEN AND GRAY)
+$toggle-primary: mat-palette($mat-green, 600);
+$toggle-accent: mat-palette($mat-grey, 600);
+$toggle-warn: mat-palette($mat-red, 800);
+$toggle-theme: mat-light-theme(
+  (
+    color: (
+      primary: $toggle-primary,
+      accent: $toggle-accent,
+      warn: $toggle-warn
+    )
+  )
+);
+
+@mixin mix-app-theme($toggle-theme) {
+  $primary: map-get($toggle-theme, primary);
+  $accent: map-get($toggle-theme, accent);
+
+  .mat-button-toggle {
+    background-color: mat-color($accent);
+    color: $light-primary-text;
+    width: 100px;
+  }
+
+  .mat-button-toggle-checked {
+    background-color: mat-color($primary);
+    width: 100px;
+
+    .mat-button-toggle-label-content {
+      color: $light-primary-text;
+    }
+  }
+}
+
+// Include the toggle color styles inside of a block with a CSS class. You can make this
+// CSS class whatever you want. In this example, any component inside of an element with
+// `.unicorn-toggle-theme` will be affected by this alternate toggle theme instead of the default theme.
+.toggle-theme {
+  @include angular-material-color($toggle-theme);
+  @include mix-app-theme($toggle-theme);
+}
