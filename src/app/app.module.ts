@@ -5,10 +5,13 @@ import { MaterialModule } from '@app/material.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import * as pages from './pages';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    pages.NC1Component,
+    pages.WelcomeComponent
   ],
   imports: [
     BrowserModule,

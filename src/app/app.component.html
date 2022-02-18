@@ -30,7 +30,7 @@
     <mat-sidenav #sidenav mode="side" [(opened)]="sidebarOpen">
       <mat-nav-list>
         <mat-list-item [class.disabled]="true" [disableRipple]="true"><mat-icon mat-list-icon>home</mat-icon>Junior High School</mat-list-item>
-        <a mat-list-item><mat-icon mat-list-icon>horizontal_rule</mat-icon>New Crown 1</a>
+        <a mat-list-item (click)="changePage('jhs-nc1')"><mat-icon mat-list-icon>horizontal_rule</mat-icon>New Crown 1</a>
         <a mat-list-item><mat-icon mat-list-icon>horizontal_rule</mat-icon>New Crown 2</a>
         <a mat-list-item><mat-icon mat-list-icon>horizontal_rule</mat-icon>New Crown 3</a>
         <a mat-list-item><mat-icon mat-list-icon>horizontal_rule</mat-icon>Holiday Lessons</a>
@@ -45,7 +45,8 @@
     </mat-sidenav>
 
     <mat-sidenav-content fxLayout="column">
-      <a>Test Test Test</a>
+      <welcome *ngIf="page==='welcome'"></welcome>
+      <jhs-nc1 *ngIf="page==='jhs-nc1'"></jhs-nc1>
     </mat-sidenav-content>
   </mat-sidenav-container>
 

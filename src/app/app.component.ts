@@ -16,11 +16,16 @@ export class AppComponent {
   faEnvelope = faEnvelope;
   faAngular = faAngular;
   faHome = faHome;
-  sidebarOpen = true;
+  sidebarOpen = false;
+  page: string = "welcome";
 
   toggleSidebar() {
     const opposite = !this.sidebarOpen;
     this.sidebarOpen = opposite;
+  }
+
+  changePage(changePage: string) {
+    this.page = changePage;
   }
 
 }

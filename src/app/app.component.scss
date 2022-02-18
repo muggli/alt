@@ -54,6 +54,12 @@
     user-select: none;
   }
 
+  .divider {
+    width: 10px;
+    height: auto;
+    display: inline-block;
+  }
+
   .toolbar {
     position: absolute;
     top: 0;
@@ -323,4 +329,45 @@
       display: none;
       visibility: hidden;
     }
+  }
+
+  /* FORMS */
+  .form-container {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    max-width: 50%;
+  }
+
+  .welcome-container {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    max-width: 500px;
+  }
+
+  .form-header {
+    font-size: 2.2rem !important;
+    font: 400 24px/32px Roboto, 'Helvetica Neue', sans-serif;
+    letter-spacing: normal;
+    display: block;
+    padding: 10px 0px 10px 0px;
+    user-select: none;
+    margin: 0;
+  }
+
+  .form-content {
+    margin-top: 30px;
+    font: 400 16px/24px Roboto, 'Helvetica Neue', sans-serif;
+  }
+
+  .form-content-title {
+    font-size: 1.2rem !important;
+    font: 400 24px/32px Roboto, 'Helvetica Neue', sans-serif;
+    letter-spacing: normal;
+    display: block;
+    padding: 5px 0px 15px 10px;
+    user-select: none;
   }
