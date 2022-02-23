@@ -39,9 +39,9 @@
 
     <mat-sidenav-content fxLayout="column">
       <welcome *ngIf="page==='welcome'"></welcome>
-      <file-tree *ngIf="page==='jhs'" [page]="page" [title]="'Junior High School'"></file-tree>
-      <file-tree *ngIf="page==='eigomura'" [page]="page" [title]="'英語村'"></file-tree>
-      <file-tree *ngIf="page==='misc'" [page]="page" [title]="'Miscellaneous'"></file-tree>
+      <file-tree *ngIf="page==='jhs'" [page]="page"></file-tree>
+      <file-tree *ngIf="page==='eigomura'" [page]="page"></file-tree>
+      <file-tree *ngIf="page==='misc'" [page]="page"></file-tree>
     </mat-sidenav-content>
   </mat-sidenav-container>
 

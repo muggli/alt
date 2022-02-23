@@ -18,7 +18,7 @@ export class FileTreeComponent {
   constructor(private dialog: MatDialog) {}
 
   @Input() page: string = '';
-  @Input() title: string = '';
+  title: string = '';
   treeControl = new NestedTreeControl<TreeNode>(node => node.children);
   dataSource = new MatTreeNestedDataSource<TreeNode>();
   loadTreeOnPage: TreeNode[] = [];
@@ -31,6 +31,7 @@ export class FileTreeComponent {
   ngOnInit() {
     switch ( this.page ) {
         case 'jhs':
+            this.title = "Junior High School";
             this.lessons.push(Nc1Lessons.JhsNc1Lesson00Warmup);
             this.lessons.push(Nc1Lessons.JhsNc1Lesson00GetReady);
             this.lessons.push(Nc1Lessons.JhsNc1Lesson01);
@@ -44,6 +45,7 @@ export class FileTreeComponent {
             this.dataSource.data = this.loadTreeOnPage;
             break;
         default:
+            this.title = "NO PAGE FOUND";
             this.dataSource.data = [];
     }
   }
