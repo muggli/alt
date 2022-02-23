@@ -1,0 +1,107 @@
+.header-tree-node {
+  font: 400 24px/36px Roboto, 'Helvetica Neue', sans-serif;
+  font-weight:600;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.lesson-tree-node {
+  font: 400 16px/24px Roboto, 'Helvetica Neue', sans-serif;
+  color: black;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.chapter-tree-node {
+  font: 400 16px/24px Roboto, 'Helvetica Neue', sans-serif;
+  color: black;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.folder-tree-node {
+  font: 400 16px/24px Roboto, 'Helvetica Neue', sans-serif;
+  color: black;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.file-tree-node {
+  font: 400 16px/24px Roboto, 'Helvetica Neue', sans-serif;
+  color: black;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.file-tree-node:hover {
+  font: 400 16px/24px Roboto, 'Helvetica Neue', sans-serif;
+  color: blue;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.example-tree-invisible {
+    display: none;
+  }
+  
+  .example-tree ul,
+  .example-tree li {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+  }
+  
+  /*
+   * This padding sets alignment of the nested nodes.
+   */
+  .example-tree .mat-nested-tree-node div[role=group] {
+    padding-left: 40px;
+  }
+  
+  /*
+   * Padding for leaf nodes.
+   * Leaf nodes need to have padding so as to align with other non-leaf nodes
+   * under the same parent.
+   */
+  .example-tree div[role=group] > .mat-tree-node {
+    padding-left: 15px;
+  }
+
+  /* FORMS */
+  .form-container {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    min-width: 50%;
+  }
+
+  .form-header {
+    font-size: 2.2rem !important;
+    font: 400 24px/32px Roboto, 'Helvetica Neue', sans-serif;
+    letter-spacing: normal;
+    display: block;
+    padding: 10px 0px 10px 0px;
+    user-select: none;
+    margin: 0;
+  }
+
+  .form-content {
+    margin-top: 30px;
+    font: 400 16px/24px Roboto, 'Helvetica Neue', sans-serif;
+  }

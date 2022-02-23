@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { faGithub, faLinkedin, faAngular } from '@fortawesome/free-brands-svg-icons';
-import { faHeart, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faHeart, faHome, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 @Component({
@@ -14,7 +14,7 @@ export class AppComponent {
   faHeart = faHeart;
   faLinkedin = faLinkedin;
   faEnvelope = faEnvelope;
-  faAngular = faAngular;
+  faGlobe = faGlobe;
   faHome = faHome;
   sidebarOpen = false;
   page: string = "welcome";

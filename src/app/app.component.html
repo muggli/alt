@@ -16,6 +16,7 @@
           </div>
 
           <div fxFlex fxLayoutAlign="flex-end center">
+            <a href="https://muggli.github.io/"><fa-icon [icon]="faGlobe" size="2x" [styles]="{'color': 'white', 'padding-right': '.5em'}"></fa-icon></a>
             <a href="https://muggli.github.io/life/"><fa-icon [icon]="faHeart" size="2x" [styles]="{'color': 'white', 'padding-right': '.5em'}"></fa-icon></a>
             <a href="https://github.com/muggli/"><fa-icon [icon]="faGithub" size="2x" [styles]="{'color': 'white', 'padding-right': '.5em'}"></fa-icon></a>
             <a href="https://www.linkedin.com/in/ryan-muggli/"><fa-icon [icon]="faLinkedin" size="2x" [styles]="{'color': 'white', 'padding-right': '.5em'}"></fa-icon></a>
@@ -29,24 +30,18 @@
   <mat-sidenav-container class="content-display-container">
     <mat-sidenav #sidenav mode="side" [(opened)]="sidebarOpen">
       <mat-nav-list>
-        <mat-list-item [class.disabled]="true" [disableRipple]="true"><mat-icon mat-list-icon>home</mat-icon>Junior High School</mat-list-item>
-        <a mat-list-item (click)="changePage('jhs-nc1')"><mat-icon mat-list-icon>horizontal_rule</mat-icon>New Crown 1</a>
-        <a mat-list-item><mat-icon mat-list-icon>horizontal_rule</mat-icon>New Crown 2</a>
-        <a mat-list-item><mat-icon mat-list-icon>horizontal_rule</mat-icon>New Crown 3</a>
-        <a mat-list-item><mat-icon mat-list-icon>horizontal_rule</mat-icon>Holiday Lessons</a>
-        <a mat-list-item><mat-icon mat-list-icon>horizontal_rule</mat-icon>文化祭</a>
-        <mat-list-item [class.disabled]="true" [disableRipple]="true"><mat-icon mat-list-icon>home</mat-icon>英語村英語村</mat-list-item>
-        <a mat-list-item><mat-icon mat-list-icon>horizontal_rule</mat-icon>英吾村 - 小学校</a>
-        <a mat-list-item><mat-icon mat-list-icon>horizontal_rule</mat-icon>英吾村 - 中学校</a>
-        <mat-list-item [class.disabled]="true" [disableRipple]="true"><mat-icon mat-list-icon>home</mat-icon>Miscellaneous</mat-list-item>
-        <a mat-list-item><mat-icon mat-list-icon>horizontal_rule</mat-icon>Fonts</a>
-        <a mat-list-item><mat-icon mat-list-icon>horizontal_rule</mat-icon>Templates</a>
+        <a mat-list-item (click)="changePage('welcome')"><mat-icon mat-list-icon>home</mat-icon>Welcome</a>
+        <a mat-list-item (click)="changePage('jhs')"><mat-icon mat-list-icon>school</mat-icon>Junior High School</a>
+        <a mat-list-item (click)="changePage('eigomura')"><mat-icon mat-list-icon>groups</mat-icon>英語村</a>
+        <a mat-list-item (click)="changePage('misc')"><mat-icon mat-list-icon>translate</mat-icon>Miscellaneous</a>
       </mat-nav-list>
     </mat-sidenav>
 
     <mat-sidenav-content fxLayout="column">
       <welcome *ngIf="page==='welcome'"></welcome>
-      <jhs-nc1 *ngIf="page==='jhs-nc1'"></jhs-nc1>
+      <file-tree *ngIf="page==='jhs'" [page]="page" [title]="'Junior High School'"></file-tree>
+      <file-tree *ngIf="page==='eigomura'" [page]="page" [title]="'英語村'"></file-tree>
+      <file-tree *ngIf="page==='misc'" [page]="page" [title]="'Miscellaneous'"></file-tree>
     </mat-sidenav-content>
   </mat-sidenav-container>
 
