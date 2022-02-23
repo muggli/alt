@@ -5,7 +5,7 @@ import { TreeNode } from './file.tree.data';
 import { faFolderOpen, faChalkboardTeacher, faBook } from '@fortawesome/free-solid-svg-icons';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogNoFileFound } from '../dialog/no.file.found.dialog';
-import * as lessons from './data/jhs/index';
+import * as Nc1Lessons from './data/jhs/nc1/index';
 
 @Component({
     selector: 'file-tree',
@@ -23,7 +23,7 @@ export class FileTreeComponent {
   dataSource = new MatTreeNestedDataSource<TreeNode>();
   loadTreeOnPage: TreeNode[] = [];
   lessons: TreeNode[] = [];
-  JhsNc1Header: TreeNode = lessons.JhsNc1Header;
+  JhsNc1Header: TreeNode = Nc1Lessons.JhsNc1Header;
   faFolderOpen = faFolderOpen;
   faChalkboardTeacher = faChalkboardTeacher;
   faBook = faBook;
@@ -31,11 +31,15 @@ export class FileTreeComponent {
   ngOnInit() {
     switch ( this.page ) {
         case 'jhs':
-            this.lessons.push(lessons.JhsNc1Lesson00Warmup);
-            this.lessons.push(lessons.JhsNc1Lesson00GetReady);
-            this.lessons.push(lessons.JhsNc1Lesson01);
+            this.lessons.push(Nc1Lessons.JhsNc1Lesson00Warmup);
+            this.lessons.push(Nc1Lessons.JhsNc1Lesson00GetReady);
+            this.lessons.push(Nc1Lessons.JhsNc1Lesson01);
+            this.lessons.push(Nc1Lessons.JhsNc1Lesson02);
+            this.lessons.push(Nc1Lessons.JhsNc1Lesson03);
+            this.lessons.push(Nc1Lessons.JhsNc1Lesson04);
+            this.lessons.push(Nc1Lessons.JhsNc1Lesson05);
             this.JhsNc1Header.children = this.lessons;
-            this.loadTreeOnPage.push(lessons.JhsNc1Header); 
+            this.loadTreeOnPage.push(Nc1Lessons.JhsNc1Header); 
             
             this.dataSource.data = this.loadTreeOnPage;
             break;
