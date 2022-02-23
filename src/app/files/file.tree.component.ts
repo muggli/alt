@@ -1,8 +1,10 @@
-import {NestedTreeControl} from '@angular/cdk/tree';
-import {Component, Input} from '@angular/core';
-import {MatTreeNestedDataSource} from '@angular/material/tree';
-import {TreeNode} from './file.tree.data';
+import { NestedTreeControl } from '@angular/cdk/tree';
+import { Component, Input } from '@angular/core';
+import { MatTreeNestedDataSource } from '@angular/material/tree';
+import { TreeNode } from './file.tree.data';
 import { faFolderOpen, faChalkboardTeacher, faBook } from '@fortawesome/free-solid-svg-icons';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogNoFileFound } from '../dialog/no.file.found.dialog';
 import * as lessons from './data/jhs/index';
 
 @Component({
@@ -12,6 +14,8 @@ import * as lessons from './data/jhs/index';
   })
 
 export class FileTreeComponent {
+
+  constructor(private dialog: MatDialog) {}
 
   @Input() page: string = '';
   @Input() title: string = '';
@@ -42,13 +46,32 @@ export class FileTreeComponent {
 
   downloadFile(fileName: string) {
 
-    let link = document.createElement('a');
-    link.setAttribute('type', 'hidden');
-    link.href = `../../assets/${fileName}`;
-    link.download = `${fileName}`;
-    document.body.appendChild(link);
-    link.click();
-    link.remove();
+    let filePath = `../../assets/${fileName}`;
+
+    if (this.doesFileExist(filePath)) {
+      let link = document.createElement('a');
+      link.setAttribute('type', 'hidden');
+      link.href = filePath;
+      link.download = `${fileName}`;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    } else {
+      this.dialog.open(DialogNoFileFound);
+    }
+
+  }
+
+  doesFileExist(urlToFile: string) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', urlToFile, false);
+    xhr.send();
+     
+    if (xhr.status === 404) {
+        return false;
+    } else {
+        return true;
+    }
   }
 
   hasChild = (_: number, node: TreeNode) => !!node.children && node.children.length > 0;

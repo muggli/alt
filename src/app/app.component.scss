@@ -54,6 +54,14 @@
     user-select: none;
   }
 
+  .dialog-header {
+    color:darkgreen;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
   .divider {
     width: 10px;
     height: auto;
