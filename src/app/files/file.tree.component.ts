@@ -6,6 +6,7 @@ import { faFolderOpen, faChalkboardTeacher, faBook } from '@fortawesome/free-sol
 import { MatDialog } from '@angular/material/dialog';
 import { DialogNoFileFound } from '../dialog/no.file.found.dialog';
 import * as Nc1Lessons from './data/jhs/nc1/index';
+import * as Misc from './data/misc/index';
 
 @Component({
     selector: 'file-tree',
@@ -24,6 +25,7 @@ export class FileTreeComponent {
   loadTreeOnPage: TreeNode[] = [];
   lessons: TreeNode[] = [];
   JhsNc1Header: TreeNode = Nc1Lessons.JhsNc1Header;
+  MiscHeader: TreeNode[] = Misc.MiscData;
   faFolderOpen = faFolderOpen;
   faChalkboardTeacher = faChalkboardTeacher;
   faBook = faBook;
@@ -31,22 +33,26 @@ export class FileTreeComponent {
   ngOnInit() {
     switch ( this.page ) {
         case 'jhs':
-            this.title = "Junior High School";
-            this.lessons.push(Nc1Lessons.JhsNc1Lesson00Warmup);
-            this.lessons.push(Nc1Lessons.JhsNc1Lesson00GetReady);
-            this.lessons.push(Nc1Lessons.JhsNc1Lesson01);
-            this.lessons.push(Nc1Lessons.JhsNc1Lesson02);
-            this.lessons.push(Nc1Lessons.JhsNc1Lesson03);
-            this.lessons.push(Nc1Lessons.JhsNc1Lesson04);
-            this.lessons.push(Nc1Lessons.JhsNc1Lesson05);
-            this.JhsNc1Header.children = this.lessons;
-            this.loadTreeOnPage.push(Nc1Lessons.JhsNc1Header); 
-            
-            this.dataSource.data = this.loadTreeOnPage;
-            break;
+          this.title = "Junior High School";
+          this.lessons.push(Nc1Lessons.JhsNc1Lesson00Warmup);
+          this.lessons.push(Nc1Lessons.JhsNc1Lesson00GetReady);
+          this.lessons.push(Nc1Lessons.JhsNc1Lesson01);
+          this.lessons.push(Nc1Lessons.JhsNc1Lesson02);
+          this.lessons.push(Nc1Lessons.JhsNc1Lesson03);
+          this.lessons.push(Nc1Lessons.JhsNc1Lesson04);
+          this.lessons.push(Nc1Lessons.JhsNc1Lesson05);
+          this.JhsNc1Header.children = this.lessons;
+          this.loadTreeOnPage.push(Nc1Lessons.JhsNc1Header); 
+          
+          this.dataSource.data = this.loadTreeOnPage;
+          break;
+        case 'misc':
+          this.title = "Miscellaneous";
+          this.dataSource.data = this.MiscHeader;
+          break;
         default:
-            this.title = "NO PAGE FOUND";
-            this.dataSource.data = [];
+          this.title = "NO PAGE FOUND";
+          this.dataSource.data = [];
     }
   }
 
