@@ -1,5 +1,4 @@
 import { TreeNode } from '@app/files/file.tree.data';
-import { faFilePdf } from '@fortawesome/free-regular-svg-icons';
 
 export const JhsNc1Lesson00Warmup: TreeNode =
   {

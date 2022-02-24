@@ -24,6 +24,7 @@
                     <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'filePdf'" class="file-tree-node"><fa-icon [icon]="faFilePdf" size="lg" *ngIf="node.type === 'filePdf'" [styles]="{'color': 'red'}"></fa-icon> &nbsp; {{node.name}}</button>
                     <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'fileImage'" class="file-tree-node"><fa-icon [icon]="faFileImage" size="lg" *ngIf="node.type === 'fileImage'" [styles]="{'color': 'purple'}"></fa-icon> &nbsp; {{node.name}}</button>
                     <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'fileExcel'" class="file-tree-node"><fa-icon [icon]="faFileExcel" size="lg" *ngIf="node.type === 'fileExcel'" [styles]="{'color': 'green'}"></fa-icon> &nbsp; {{node.name}}</button>
+                    <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'filePowerpoint'" class="file-tree-node"><fa-icon [icon]="faFilePowerpoint" size="lg" *ngIf="node.type === 'filePowerpoint'" [styles]="{'color': 'orange'}"></fa-icon> &nbsp; {{node.name}}</button>
                     <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'fileOther'" class="file-tree-node"><fa-icon [icon]="faFile" size="lg" *ngIf="node.type === 'fileOther'" [styles]="{'color': 'gray'}"></fa-icon> &nbsp; {{node.name}}</button>
                 </mat-tree-node>
                 <!-- This is the tree node template for expandable nodes -->
@@ -43,6 +44,7 @@
                       <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'filePdf'" class="file-tree-node"><fa-icon [icon]="faFilePdf" size="lg" *ngIf="node.type === 'filePdf'" [styles]="{'color': 'red'}"></fa-icon> &nbsp; {{node.name}}</button>
                       <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'fileImage'" class="file-tree-node"><fa-icon [icon]="faFileImage" size="lg" *ngIf="node.type === 'fileImage'" [styles]="{'color': 'purple'}"></fa-icon> &nbsp; {{node.name}}</button>
                       <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'fileExcel'" class="file-tree-node"><fa-icon [icon]="faFileExcel" size="lg" *ngIf="node.type === 'fileExcel'" [styles]="{'color': 'green'}"></fa-icon> &nbsp; {{node.name}}</button>
+                      <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'filePowerpoint'" class="file-tree-node"><fa-icon [icon]="faFilePowerpoint" size="lg" *ngIf="node.type === 'filePowerpoint'" [styles]="{'color': 'orange'}"></fa-icon> &nbsp; {{node.name}}</button>
                       <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'fileOther'" class="file-tree-node"><fa-icon [icon]="faFile" size="lg" *ngIf="node.type === 'fileOther'" [styles]="{'color': 'gray'}"></fa-icon> &nbsp; {{node.name}}</button>
                     </div>
                     <!-- There is inline padding applied to this div using styles.

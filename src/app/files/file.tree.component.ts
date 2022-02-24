@@ -2,11 +2,12 @@ import { NestedTreeControl } from '@angular/cdk/tree';
 import { Component, Input } from '@angular/core';
 import { MatTreeNestedDataSource } from '@angular/material/tree';
 import { TreeNode } from './file.tree.data';
-import { faFolderOpen, faChalkboardTeacher, faBook, faFileExcel, faFile, faFileWord, faFilePdf, faFileImage } from '@fortawesome/free-solid-svg-icons';
+import { faFolderOpen, faChalkboardTeacher, faBook, faFileExcel, faFile, faFileWord, faFilePdf, faFileImage, faFilePowerpoint } from '@fortawesome/free-solid-svg-icons';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogNoFileFound } from '../dialog/no.file.found.dialog';
 import * as Nc1Lessons from './data/jhs/nc1/index';
 import * as Misc from './data/misc/index';
+import * as Eigomura from './data/eigomura/index';
 
 @Component({
     selector: 'file-tree',
@@ -25,6 +26,8 @@ export class FileTreeComponent {
   loadTreeOnPage: TreeNode[] = [];
   lessons: TreeNode[] = [];
   JhsNc1Header: TreeNode = Nc1Lessons.JhsNc1Header;
+  EigomuraEsHeader: TreeNode = Eigomura.EigomuraEsHeader;
+  EigomuraJhsHeader: TreeNode = Eigomura.EigomuraJhsHeader;
   MiscHeader: TreeNode[] = Misc.MiscData;
   faFolderOpen = faFolderOpen;
   faChalkboardTeacher = faChalkboardTeacher;
@@ -33,7 +36,8 @@ export class FileTreeComponent {
   faFile = faFile;
   faFileWord = faFileWord;
   faFilePdf = faFilePdf;
-  faFileImage = faFileImage; 
+  faFileImage = faFileImage;
+  faFilePowerpoint = faFilePowerpoint;
 
   ngOnInit() {
     switch ( this.page ) {
@@ -48,7 +52,12 @@ export class FileTreeComponent {
           this.lessons.push(Nc1Lessons.JhsNc1Lesson05);
           this.JhsNc1Header.children = this.lessons;
           this.loadTreeOnPage.push(Nc1Lessons.JhsNc1Header); 
-          
+          this.dataSource.data = this.loadTreeOnPage;
+          break;
+        case 'eigomura':
+          this.title = "英語村";
+          this.loadTreeOnPage.push(this.EigomuraEsHeader); 
+          this.loadTreeOnPage.push(this.EigomuraJhsHeader); 
           this.dataSource.data = this.loadTreeOnPage;
           break;
         case 'misc':

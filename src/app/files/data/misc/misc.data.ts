@@ -1,5 +1,4 @@
 import { TreeNode } from '@app/files/file.tree.data';
-import { faFileWord, faFile, faFileExcel } from '@fortawesome/free-regular-svg-icons';
 
 export const MiscData: TreeNode[] =
     [
