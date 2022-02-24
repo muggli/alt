@@ -9,14 +9,14 @@ export const JhsNc1Lesson01: TreeNode =
           {
             name: 'Interview Activity', type: 'folder', children: [
               {
-                name: 'NC1.L01.01.ActivityInterview.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L01.01.ActivityInterview.docx', type: 'fileWord'
               }
             ]
           },
           {
             name: 'Quiz', type: 'folder', children: [
               {
-                name: 'NC1.L01.01.GreetingsTest.pdf', type: 'file', svgIcon: faFilePdf
+                name: 'NC1.L01.01.GreetingsTest.pdf', type: 'filePdf'
               }
             ]
           }
@@ -27,7 +27,7 @@ export const JhsNc1Lesson01: TreeNode =
           {
             name: 'Quiz', type: 'folder', children: [
               {
-                name: 'NC1.L01.02.WordTest.pdf', type: 'file', svgIcon: faFilePdf
+                name: 'NC1.L01.02.WordTest.pdf', type: 'filePdf'
               }
             ]
           }
@@ -38,10 +38,10 @@ export const JhsNc1Lesson01: TreeNode =
           {
             name: 'Worksheet', type: 'folder', children: [
               {
-                name: 'NC1.L01.03.HowAreYouWS.JPG', type: 'file', svgIcon: faFileImage
+                name: 'NC1.L01.03.HowAreYouWS.JPG', type: 'fileImage'
               },
               {
-                name: 'NC1.L01.03.Worksheet.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L01.03.Worksheet.docx', type: 'fileWord'
               }
             ]
           }
@@ -52,46 +52,46 @@ export const JhsNc1Lesson01: TreeNode =
           {
             name: 'Battleship', type: 'folder', children: [
               {
-                name: 'NC1.L01.WordsAndSounds.Battleship.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L01.WordsAndSounds.Battleship.docx', type: 'fileWord'
               }
             ]
           },
           {
             name: 'Card Grab', type: 'folder', children: [
               {
-                name: 'NC1.L01.WordsAndSounds.CardGrab.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L01.WordsAndSounds.CardGrab.docx', type: 'fileWord'
               }
             ]
           },
           {
             name: 'Number Challenge', type: 'folder', children: [
               {
-                name: 'NC1.L01.WordsAndSounds.NumberChallenge1.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L01.WordsAndSounds.NumberChallenge1.docx', type: 'fileWord'
               },
               {
-                name: 'NC1.L01.WordsAndSounds.NumberChallenge2.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L01.WordsAndSounds.NumberChallenge2.docx', type: 'fileWord'
               },
               {
-                name: 'NC1.L01.WordsAndSounds.NumberLizard1.pdf', type: 'file', svgIcon: faFilePdf
+                name: 'NC1.L01.WordsAndSounds.NumberLizard1.pdf', type: 'filePdf'
               },
               {
-                name: 'NC1.L01.WordsAndSounds.NumberLizard2.pdf', type: 'file', svgIcon: faFilePdf
+                name: 'NC1.L01.WordsAndSounds.NumberLizard2.pdf', type: 'filePdf'
               },
               {
-                name: 'NC1.L01.WordsAndSounds.NumberM.pdf', type: 'file', svgIcon: faFilePdf
+                name: 'NC1.L01.WordsAndSounds.NumberM.pdf', type: 'filePdf'
               },
               {
-                name: 'NC1.L01.WordsAndSounds.NumberPenguin1.pdf', type: 'file', svgIcon: faFilePdf
+                name: 'NC1.L01.WordsAndSounds.NumberPenguin1.pdf', type: 'filePdf'
               },
               {
-                name: 'NC1.L01.WordsAndSounds.NumberPenguin2.pdf', type: 'file', svgIcon: faFilePdf
+                name: 'NC1.L01.WordsAndSounds.NumberPenguin2.pdf', type: 'filePdf'
               }
             ]
           },
           {
             name: 'Worksheet', type: 'folder', children: [
               {
-                name: 'NC1.L01.WordsAndSounds.TelephoneWS.JPG', type: 'file', svgIcon: faFileImage
+                name: 'NC1.L01.WordsAndSounds.TelephoneWS.JPG', type: 'fileImage'
               }
             ]
           }
@@ -102,7 +102,7 @@ export const JhsNc1Lesson01: TreeNode =
           {
             name: 'Jeopardy', type: 'folder', children: [
               {
-                name: 'NC1.L01.Review.Jeopardy.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L01.Review.Jeopardy.docx', type: 'fileWord'
               }
             ]
           }

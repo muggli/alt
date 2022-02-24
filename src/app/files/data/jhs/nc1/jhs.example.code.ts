@@ -9,7 +9,7 @@ export const JhsNc1Lesson03: TreeNode =
           {
             name: 'Line Game', type: 'folder', children: [
               {
-                name: 'NC1.L02.01.LineGame.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L02.01.LineGame.docx', type: 'fileWord'
               }
             ]
           }

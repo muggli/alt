@@ -20,7 +20,11 @@
                     <a *ngIf="node.type === 'lesson'" class="lesson-tree-node"><fa-icon [icon]="faChalkboardTeacher" size="lg" *ngIf="node.type === 'lesson'" [styles]="{'color': 'purple'}"></fa-icon> &nbsp; {{node.name}}</a>
                     <a *ngIf="node.type === 'chapter'" class="chapter-tree-node"><fa-icon [icon]="faBook" size="lg" *ngIf="node.type === 'chapter'" [styles]="{'color': 'green'}"></fa-icon> &nbsp; {{node.name}}</a>
                     <a *ngIf="node.type === 'folder'" class="folder-tree-node"><fa-icon [icon]="faFolderOpen" size="lg" *ngIf="node.type === 'folder'" [styles]="{'color': 'orange'}"></fa-icon> &nbsp; {{node.name}}</a>
-                    <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'file'" class="file-tree-node"><fa-icon [icon]="node.svgIcon" size="lg" *ngIf="node.svgIcon" [styles]="{'color': 'red'}"></fa-icon> &nbsp; {{node.name}}</button>
+                    <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'fileWord'" class="file-tree-node"><fa-icon [icon]="faFileWord" size="lg" *ngIf="node.type === 'fileWord'" [styles]="{'color': 'blue'}"></fa-icon> &nbsp; {{node.name}}</button>
+                    <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'filePdf'" class="file-tree-node"><fa-icon [icon]="faFilePdf" size="lg" *ngIf="node.type === 'filePdf'" [styles]="{'color': 'red'}"></fa-icon> &nbsp; {{node.name}}</button>
+                    <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'fileImage'" class="file-tree-node"><fa-icon [icon]="faFileImage" size="lg" *ngIf="node.type === 'fileImage'" [styles]="{'color': 'purple'}"></fa-icon> &nbsp; {{node.name}}</button>
+                    <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'fileExcel'" class="file-tree-node"><fa-icon [icon]="faFileExcel" size="lg" *ngIf="node.type === 'fileExcel'" [styles]="{'color': 'green'}"></fa-icon> &nbsp; {{node.name}}</button>
+                    <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'fileOther'" class="file-tree-node"><fa-icon [icon]="faFile" size="lg" *ngIf="node.type === 'fileOther'" [styles]="{'color': 'gray'}"></fa-icon> &nbsp; {{node.name}}</button>
                 </mat-tree-node>
                 <!-- This is the tree node template for expandable nodes -->
                 <mat-nested-tree-node *matTreeNodeDef="let node; when: hasChild">
@@ -35,7 +39,11 @@
                       <a *ngIf="node.type === 'lesson'" class="lesson-tree-node"><fa-icon [icon]="faChalkboardTeacher" size="lg" *ngIf="node.type === 'lesson'" [styles]="{'color': 'purple'}"></fa-icon> &nbsp; {{node.name}}</a>
                       <a *ngIf="node.type === 'chapter'" class="chapter-tree-node"><fa-icon [icon]="faBook" size="lg" *ngIf="node.type === 'chapter'" [styles]="{'color': 'green'}"></fa-icon> &nbsp; {{node.name}}</a>
                       <a *ngIf="node.type === 'folder'" class="folder-tree-node"><fa-icon [icon]="faFolderOpen" size="lg" *ngIf="node.type === 'folder'" [styles]="{'color': 'orange'}"></fa-icon> &nbsp; {{node.name}}</a>
-                      <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'file'" class="file-tree-node"><fa-icon [icon]="node.svgIcon" size="lg" *ngIf="node.svgIcon" [styles]="{'color': 'red'}"></fa-icon> &nbsp; {{node.name}}</button>
+                      <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'fileWord'" class="file-tree-node"><fa-icon [icon]="faFileWord" size="lg" *ngIf="node.type === 'fileWord'" [styles]="{'color': 'blue'}"></fa-icon> &nbsp; {{node.name}}</button>
+                      <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'filePdf'" class="file-tree-node"><fa-icon [icon]="faFilePdf" size="lg" *ngIf="node.type === 'filePdf'" [styles]="{'color': 'red'}"></fa-icon> &nbsp; {{node.name}}</button>
+                      <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'fileImage'" class="file-tree-node"><fa-icon [icon]="faFileImage" size="lg" *ngIf="node.type === 'fileImage'" [styles]="{'color': 'purple'}"></fa-icon> &nbsp; {{node.name}}</button>
+                      <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'fileExcel'" class="file-tree-node"><fa-icon [icon]="faFileExcel" size="lg" *ngIf="node.type === 'fileExcel'" [styles]="{'color': 'green'}"></fa-icon> &nbsp; {{node.name}}</button>
+                      <button mat-button (click)="downloadFile(node.name)" *ngIf="node.type === 'fileOther'" class="file-tree-node"><fa-icon [icon]="faFile" size="lg" *ngIf="node.type === 'fileOther'" [styles]="{'color': 'gray'}"></fa-icon> &nbsp; {{node.name}}</button>
                     </div>
                     <!-- There is inline padding applied to this div using styles.
                         This padding value depends on the mat-icon-button width.  -->

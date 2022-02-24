@@ -9,7 +9,7 @@ export const JhsNc1Lesson00GetReady: TreeNode =
           {
             name: 'Worksheet', type: 'folder', children: [
               {
-                name: 'NC1.L00.Extra.IntroductionWS.JPG', type: 'file', svgIcon: faFileImage
+                name: 'NC1.L00.Extra.IntroductionWS.JPG', type: 'fileImage'
               }
             ]
           }
@@ -20,24 +20,24 @@ export const JhsNc1Lesson00GetReady: TreeNode =
           {
             name: 'Card Grab', type: 'folder', children: [
               {
-                name: 'NC1.L00.GetReady3.CardGrabLower.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L00.GetReady3.CardGrabLower.docx', type: 'fileWord'
               },
               {
-                name: 'NC1.L00.GetReady3.CardGrabUpper.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L00.GetReady3.CardGrabUpper.docx', type: 'fileWord'
               }
             ]
           },
           {
             name: 'Alphabet Listening Challenge', type: 'folder', children: [
               {
-                name: 'NC1.L00.GetReady3.LettersDrawAPicture.JPG', type: 'file', svgIcon: faFileImage
+                name: 'NC1.L00.GetReady3.LettersDrawAPicture.JPG', type: 'fileImage'
               }
             ]
           },
           {
             name: 'Katakana Chart', type: 'folder', children: [
               {
-                name: 'NC1.L00.Extra.KatakanaChart.JPG', type: 'file', svgIcon: faFileImage
+                name: 'NC1.L00.Extra.KatakanaChart.JPG', type: 'fileImage'
               }
             ]
           }
@@ -48,21 +48,21 @@ export const JhsNc1Lesson00GetReady: TreeNode =
           {
             name: 'Card Grab', type: 'folder', children: [
               {
-                name: 'NC1.L00.GetReady4.CardGrabWordList.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L00.GetReady4.CardGrabWordList.docx', type: 'fileWord'
               }
             ]
           },
           {
             name: 'Dictionary', type: 'folder', children: [
               {
-                name: 'NC1.L00.Extra.UseADictionary.JPG', type: 'file', svgIcon: faFileImage
+                name: 'NC1.L00.Extra.UseADictionary.JPG', type: 'fileImage'
               }
             ]
           },
           {
             name: 'Bingo', type: 'folder', children: [
               {
-                name: 'NC1.L00.GetReady4.Bingo.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L00.GetReady4.Bingo.docx', type: 'fileWord'
               }
             ]
           }

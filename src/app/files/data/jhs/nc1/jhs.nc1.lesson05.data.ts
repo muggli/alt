@@ -9,34 +9,34 @@ export const JhsNc1Lesson05: TreeNode =
           {
             name: 'Bingo', type: 'folder', children: [
               {
-                name: 'NC1.L05.01.Bingo.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L05.01.Bingo.docx', type: 'fileWord'
               }
             ]
           },
           {
             name: 'Interview Card Game', type: 'folder', children: [
               {
-                name: 'NC1.L05.01.InterviewCardGame.doc', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L05.01.InterviewCardGame.doc', type: 'fileWord'
               },
               {
-                name: 'NC1.L05.01.InterviewSheetV1.JPG', type: 'file', svgIcon: faFileImage
+                name: 'NC1.L05.01.InterviewSheetV1.JPG', type: 'fileImage'
               },
               {
-                name: 'NC1.L05.01.InterviewSheetV2.JPG', type: 'file', svgIcon: faFileImage
+                name: 'NC1.L05.01.InterviewSheetV2.JPG', type: 'fileImage'
               }
             ]
           },
           {
             name: 'Who is it? (Game)', type: 'folder', children: [
               {
-                name: 'NC1.L05.01.WhoIsItPictures.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L05.01.WhoIsItPictures.docx', type: 'fileWord'
               }
             ]
           },
           {
             name: 'Worksheet', type: 'folder', children: [
               {
-                name: 'NC1.L05.01.Worksheet.pdf', type: 'file', svgIcon: faFilePdf
+                name: 'NC1.L05.01.Worksheet.pdf', type: 'filePdf'
               }
             ]
           }
@@ -47,28 +47,28 @@ export const JhsNc1Lesson05: TreeNode =
           {
             name: 'Card Grab, Memory', type: 'folder', children: [
               {
-                name: 'NC1.L05.02.Cards.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L05.02.Cards.docx', type: 'fileWord'
               }
             ]
           },
           {
             name: 'Guess Who (Game)', type: 'folder', children: [
               {
-                name: 'NC1.L05.02.GuessWho.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L05.02.GuessWho.docx', type: 'fileWord'
               }
             ]
           },
           {
             name: 'Jeopardy', type: 'folder', children: [
               {
-                name: 'NC1.L05.02.Jeopardy.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L05.02.Jeopardy.docx', type: 'fileWord'
               }
             ]
           },
           {
             name: 'Worksheet', type: 'folder', children: [
               {
-                name: 'NC1.L05.02.Worksheet.pdf', type: 'file', svgIcon: faFilePdf
+                name: 'NC1.L05.02.Worksheet.pdf', type: 'filePdf'
               }
             ]
           }
@@ -79,7 +79,7 @@ export const JhsNc1Lesson05: TreeNode =
           {
             name: 'Worksheet', type: 'folder', children: [
               {
-                name: 'NC1.L05.WordsAndSounds.WordTest.JPG', type: 'file', svgIcon: faFileImage
+                name: 'NC1.L05.WordsAndSounds.WordTest.JPG', type: 'fileImage'
               }
             ]
           }
@@ -90,24 +90,24 @@ export const JhsNc1Lesson05: TreeNode =
           {
             name: 'Whose is this? (Cups)', type: 'folder', children: [
               {
-                name: 'NC1.L05.Talking.WorksheetCups.pdf', type: 'file', svgIcon: faFilePdf
+                name: 'NC1.L05.Talking.WorksheetCups.pdf', type: 'filePdf'
               }
             ]
           },
           {
             name: 'Whose is this? (Things)', type: 'folder', children: [
               {
-                name: 'NC1.L05.Talking.WhoseIsThisExamples.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L05.Talking.WhoseIsThisExamples.docx', type: 'fileWord'
               },
               {
-                name: 'NC1.L05.Talking.WhoseIsThisGame.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L05.Talking.WhoseIsThisGame.docx', type: 'fileWord'
               }
             ]
           },
           {
             name: 'Whose is this? (Worksheet)', type: 'folder', children: [
               {
-                name: 'NC1.L05.Talking.WorksheetReview.pdf', type: 'file', svgIcon: faFilePdf
+                name: 'NC1.L05.Talking.WorksheetReview.pdf', type: 'filePdf'
               }
             ]
           }
@@ -118,7 +118,7 @@ export const JhsNc1Lesson05: TreeNode =
           {
             name: 'Jeopardy', type: 'folder', children: [
               {
-                name: 'NC1.L05.Review.Jeopardy.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L05.Review.Jeopardy.docx', type: 'fileWord'
               }
             ]
           }

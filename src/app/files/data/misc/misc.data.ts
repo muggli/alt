@@ -6,26 +6,26 @@ export const MiscData: TreeNode[] =
       {
         name: 'Fonts', type: 'folder', children: [
           {
-            name: 'NCGothicRegular.otf', type: 'file', svgIcon: faFile
+            name: 'NCGothicRegular.otf', type: 'fileOther'
           }
         ]
       },
       {
         name: 'Templates', type: 'folder', children: [
           {
-            name: 'CalvinHobbesBoardGame.xlsx', type: 'file', svgIcon: faFileExcel
+            name: 'CalvinHobbesBoardGame.xlsx', type: 'fileExcel'
           },
           {
-            name: 'KarutaTemplate.docx', type: 'file', svgIcon: faFileWord
+            name: 'KarutaTemplate.docx', type: 'fileWord'
           },
           {
-            name: 'SorryBoardGame.xlsx', type: 'file', svgIcon: faFileExcel
+            name: 'SorryBoardGame.xlsx', type: 'fileExcel'
           },
           {
-            name: 'SorryCards.xlsx', type: 'file', svgIcon: faFileExcel
+            name: 'SorryCards.xlsx', type: 'fileExcel'
           },
           {
-            name: 'SorrySpecialCardExamples.docx', type: 'file', svgIcon: faFileWord
+            name: 'SorrySpecialCardExamples.docx', type: 'fileWord'
           }
         ]
       }

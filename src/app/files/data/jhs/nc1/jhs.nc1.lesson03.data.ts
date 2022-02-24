@@ -9,14 +9,14 @@ export const JhsNc1Lesson03: TreeNode =
           {
             name: 'Line Game', type: 'folder', children: [
               {
-                name: 'NC1.L03.02.LineGame.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L03.02.LineGame.docx', type: 'fileWord'
               }
             ]
           },
           {
             name: 'Worksheet', type: 'folder', children: [
               {
-                name: 'NC1.L03.02.WorkSheet.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L03.02.WorkSheet.docx', type: 'fileWord'
               }
             ]
           }
@@ -27,14 +27,14 @@ export const JhsNc1Lesson03: TreeNode =
           {
             name: 'Presentation', type: 'folder', children: [
               {
-                name: 'NC1.L03.03.SelfIntroduction.JPG', type: 'file', svgIcon: faFileImage
+                name: 'NC1.L03.03.SelfIntroduction.JPG', type: 'fileImage'
               }
             ]
           },
           {
             name: 'Worksheet', type: 'folder', children: [
               {
-                name: 'NC1.L03.03.WhatDoYouLikeWS.JPG', type: 'file', svgIcon: faFileImage
+                name: 'NC1.L03.03.WhatDoYouLikeWS.JPG', type: 'fileImage'
               }
             ]
           }
@@ -45,7 +45,7 @@ export const JhsNc1Lesson03: TreeNode =
           {
             name: 'Card Grab, Go Fish', type: 'folder', children: [
               {
-                name: 'NC1.L03.WordsAndSounds.Cards.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L03.WordsAndSounds.Cards.docx', type: 'fileWord'
               }
             ]
           }
@@ -56,10 +56,10 @@ export const JhsNc1Lesson03: TreeNode =
           {
             name: 'Card Grab', type: 'folder', children: [
               {
-                name: 'NC1.L03.Talking.CardGrab.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L03.Talking.CardGrab.docx', type: 'fileWord'
               },
               {
-                name: 'NC1.L03.Talking.CardGrabList.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L03.Talking.CardGrabList.docx', type: 'fileWord'
               }
             ]
           }

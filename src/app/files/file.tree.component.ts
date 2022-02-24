@@ -2,7 +2,7 @@ import { NestedTreeControl } from '@angular/cdk/tree';
 import { Component, Input } from '@angular/core';
 import { MatTreeNestedDataSource } from '@angular/material/tree';
 import { TreeNode } from './file.tree.data';
-import { faFolderOpen, faChalkboardTeacher, faBook } from '@fortawesome/free-solid-svg-icons';
+import { faFolderOpen, faChalkboardTeacher, faBook, faFileExcel, faFile, faFileWord, faFilePdf, faFileImage } from '@fortawesome/free-solid-svg-icons';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogNoFileFound } from '../dialog/no.file.found.dialog';
 import * as Nc1Lessons from './data/jhs/nc1/index';
@@ -29,6 +29,11 @@ export class FileTreeComponent {
   faFolderOpen = faFolderOpen;
   faChalkboardTeacher = faChalkboardTeacher;
   faBook = faBook;
+  faFileExcel = faFileExcel;
+  faFile = faFile;
+  faFileWord = faFileWord;
+  faFilePdf = faFilePdf;
+  faFileImage = faFileImage; 
 
   ngOnInit() {
     switch ( this.page ) {

@@ -9,10 +9,10 @@ export const JhsNc1Lesson04: TreeNode =
           {
             name: 'Worksheet', type: 'folder', children: [
               {
-                name: 'NC1.L04.02.HowManyWS.JPG', type: 'file', svgIcon: faFileImage
+                name: 'NC1.L04.02.HowManyWS.JPG', type: 'fileImage'
               },
               {
-                name: 'NC1.L04.02.Worksheet.pdf', type: 'file', svgIcon: faFilePdf
+                name: 'NC1.L04.02.Worksheet.pdf', type: 'filePdf'
               }
             ]
           }
@@ -23,21 +23,21 @@ export const JhsNc1Lesson04: TreeNode =
           {
             name: 'Bingo', type: 'folder', children: [
               {
-                name: 'NC1.L04.03.Bingo.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L04.03.Bingo.docx', type: 'fileWord'
               }
             ]
           },
           {
             name: 'Card Grab', type: 'folder', children: [
               {
-                name: 'NC1.L04.03.CardGrab.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L04.03.CardGrab.docx', type: 'fileWord'
               }
             ]
           },
           {
             name: 'Worksheet', type: 'folder', children: [
               {
-                name: 'NC1.L04.03.Worksheet.pdf', type: 'file', svgIcon: faFilePdf
+                name: 'NC1.L04.03.Worksheet.pdf', type: 'filePdf'
               }
             ]
           }
@@ -48,7 +48,7 @@ export const JhsNc1Lesson04: TreeNode =
           {
             name: 'The Price is Right', type: 'folder', children: [
               {
-                name: 'NC1.L04.Talking.PriceIsRightPictures.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L04.Talking.PriceIsRightPictures.docx', type: 'fileWord'
               }
             ]
           }
@@ -59,10 +59,10 @@ export const JhsNc1Lesson04: TreeNode =
           {
             name: 'Word Search', type: 'folder', children: [
               {
-                name: 'NC1.L04.Review.WordSearch.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L04.Review.WordSearch.docx', type: 'fileWord'
               },
               {
-                name: 'NC1.L04.Review.WordSearchAnswers.docx', type: 'file', svgIcon: faFileWord
+                name: 'NC1.L04.Review.WordSearchAnswers.docx', type: 'fileWord'
               }
             ]
           }
