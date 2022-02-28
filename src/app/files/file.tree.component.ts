@@ -57,6 +57,12 @@ export class FileTreeComponent {
           this.lessons.push(Nc1Lessons.JhsNc1Lesson99Optional);
           this.dataSource.data = this.lessons;
           break;
+        case 'jhs-nc2':
+          this.title = "JHS: New Crown 2";
+          break;
+        case 'jhs-nc3':
+          this.title = "JHS: New Crown 3";
+          break;
         case 'eigomura':
           this.title = "英語村";
           this.loadTreeOnPage.push(this.EigomuraEsHeader); 
@@ -75,7 +81,7 @@ export class FileTreeComponent {
 
   downloadFile(fileName: string) {
 
-    let filePath = `../../assets/${fileName}`;
+    let filePath = `./assets/${fileName}`;
 
     if (this.doesFileExist(filePath)) {
       let link = document.createElement('a');
