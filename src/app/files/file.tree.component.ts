@@ -4,7 +4,7 @@ import { MatTreeNestedDataSource } from '@angular/material/tree';
 import { TreeNode } from './file.tree.data';
 import { faFolderOpen, faChalkboardTeacher, faBook, faFileExcel, faFile, faFileWord, faFilePdf, faFileImage, faFilePowerpoint } from '@fortawesome/free-solid-svg-icons';
 import { MatDialog } from '@angular/material/dialog';
-import { DialogNoFileFound } from '../dialog/no.file.found.dialog';
+import { DialogNoFileFound } from '@app/dialog/no.file.found.dialog';
 import * as Nc1Lessons from './data/jhs/nc1/index';
 import * as Misc from './data/misc/index';
 import * as Eigomura from './data/eigomura/index';

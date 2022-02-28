@@ -16,7 +16,6 @@
                 <!-- There is inline padding applied to this node using styles.
                   This padding value depends on the mat-icon-button width. -->
                 <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle >
-                    <a *ngIf="node.type === 'header'"  class="header-tree-node"> &nbsp; {{node.name}}</a>
                     <a *ngIf="node.type === 'lesson'" class="lesson-tree-node"><fa-icon [icon]="faChalkboardTeacher" size="lg" *ngIf="node.type === 'lesson'" [styles]="{'color': 'purple'}"></fa-icon> &nbsp; {{node.name}}</a>
                     <a *ngIf="node.type === 'chapter'" class="chapter-tree-node"><fa-icon [icon]="faBook" size="lg" *ngIf="node.type === 'chapter'" [styles]="{'color': 'green'}"></fa-icon> &nbsp; {{node.name}}</a>
                     <a *ngIf="node.type === 'folder'" class="folder-tree-node"><fa-icon [icon]="faFolderOpen" size="lg" *ngIf="node.type === 'folder'" [styles]="{'color': 'orange'}"></fa-icon> &nbsp; {{node.name}}</a>
@@ -36,7 +35,6 @@
                           {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
                         </mat-icon>
                       </button>
-                      <a *ngIf="node.type === 'header'"  class="header-tree-node"> &nbsp; {{node.name}}</a>
                       <a *ngIf="node.type === 'lesson'" class="lesson-tree-node"><fa-icon [icon]="faChalkboardTeacher" size="lg" *ngIf="node.type === 'lesson'" [styles]="{'color': 'purple'}"></fa-icon> &nbsp; {{node.name}}</a>
                       <a *ngIf="node.type === 'chapter'" class="chapter-tree-node"><fa-icon [icon]="faBook" size="lg" *ngIf="node.type === 'chapter'" [styles]="{'color': 'green'}"></fa-icon> &nbsp; {{node.name}}</a>
                       <a *ngIf="node.type === 'folder'" class="folder-tree-node"><fa-icon [icon]="faFolderOpen" size="lg" *ngIf="node.type === 'folder'" [styles]="{'color': 'orange'}"></fa-icon> &nbsp; {{node.name}}</a>
