@@ -1,4 +1,3 @@
-export * from './jhs.nc1.header';
 export * from './jhs.nc1.lesson00.warmup.data';
 export * from './jhs.nc1.lesson00.getready.data';
 export * from './jhs.nc1.lesson01.data';
@@ -6,3 +5,9 @@ export * from './jhs.nc1.lesson02.data';
 export * from './jhs.nc1.lesson03.data';
 export * from './jhs.nc1.lesson04.data';
 export * from './jhs.nc1.lesson05.data';
+export * from './jhs.nc1.lesson06.data';
+export * from './jhs.nc1.lesson07.data';
+export * from './jhs.nc1.lesson08.data';
+export * from './jhs.nc1.lesson09.data';
+export * from './jhs.nc1.lesson99.end.of.year.data';
+export * from './jhs.nc1.lesson99.optional.data';

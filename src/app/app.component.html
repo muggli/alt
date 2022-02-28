@@ -31,7 +31,7 @@
     <mat-sidenav #sidenav mode="side" [(opened)]="sidebarOpen">
       <mat-nav-list>
         <a mat-list-item (click)="changePage('welcome')"><mat-icon mat-list-icon>home</mat-icon>Welcome</a>
-        <a mat-list-item (click)="changePage('jhs')"><mat-icon mat-list-icon>school</mat-icon>Junior High School</a>
+        <a mat-list-item (click)="changePage('jhs-nc1')"><mat-icon mat-list-icon>school</mat-icon>JHS: NC1</a>
         <a mat-list-item (click)="changePage('eigomura')"><mat-icon mat-list-icon>groups</mat-icon>英語村</a>
         <a mat-list-item (click)="changePage('misc')"><mat-icon mat-list-icon>translate</mat-icon>Miscellaneous</a>
       </mat-nav-list>
@@ -39,7 +39,7 @@
 
     <mat-sidenav-content fxLayout="column">
       <welcome *ngIf="page==='welcome'"></welcome>
-      <file-tree *ngIf="page==='jhs'" [page]="page"></file-tree>
+      <file-tree *ngIf="page==='jhs-nc1'" [page]="page"></file-tree>
       <file-tree *ngIf="page==='eigomura'" [page]="page"></file-tree>
       <file-tree *ngIf="page==='misc'" [page]="page"></file-tree>
     </mat-sidenav-content>

@@ -25,7 +25,6 @@ export class FileTreeComponent {
   dataSource = new MatTreeNestedDataSource<TreeNode>();
   loadTreeOnPage: TreeNode[] = [];
   lessons: TreeNode[] = [];
-  JhsNc1Header: TreeNode = Nc1Lessons.JhsNc1Header;
   EigomuraEsHeader: TreeNode = Eigomura.EigomuraEsHeader;
   EigomuraJhsHeader: TreeNode = Eigomura.EigomuraJhsHeader;
   MiscHeader: TreeNode[] = Misc.MiscData;
@@ -41,8 +40,8 @@ export class FileTreeComponent {
 
   ngOnInit() {
     switch ( this.page ) {
-        case 'jhs':
-          this.title = "Junior High School";
+        case 'jhs-nc1':
+          this.title = "JHS: New Crown 1";
           this.lessons.push(Nc1Lessons.JhsNc1Lesson00Warmup);
           this.lessons.push(Nc1Lessons.JhsNc1Lesson00GetReady);
           this.lessons.push(Nc1Lessons.JhsNc1Lesson01);
@@ -50,9 +49,13 @@ export class FileTreeComponent {
           this.lessons.push(Nc1Lessons.JhsNc1Lesson03);
           this.lessons.push(Nc1Lessons.JhsNc1Lesson04);
           this.lessons.push(Nc1Lessons.JhsNc1Lesson05);
-          this.JhsNc1Header.children = this.lessons;
-          this.loadTreeOnPage.push(Nc1Lessons.JhsNc1Header); 
-          this.dataSource.data = this.loadTreeOnPage;
+          this.lessons.push(Nc1Lessons.JhsNc1Lesson06);
+          this.lessons.push(Nc1Lessons.JhsNc1Lesson07);
+          this.lessons.push(Nc1Lessons.JhsNc1Lesson08);
+          this.lessons.push(Nc1Lessons.JhsNc1Lesson09);
+          this.lessons.push(Nc1Lessons.JhsNc1Lesson99EndOfYear);
+          this.lessons.push(Nc1Lessons.JhsNc1Lesson99Optional);
+          this.dataSource.data = this.lessons;
           break;
         case 'eigomura':
           this.title = "英語村";

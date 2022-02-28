@@ -3,7 +3,7 @@ import { TreeNode } from '@app/files/file.tree.data';
 export const EigomuraJhsHeader: TreeNode =
 
 {
-  name: '中学校', type: 'header', children: [
+  name: '中学校', type: 'lesson', children: [
     {
       name: 'Interview Activities', type: 'folder', children: [
         {

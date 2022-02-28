@@ -3,7 +3,7 @@ import {TreeNode} from '@app/files/file.tree.data';
 export const EigomuraEsHeader: TreeNode =
   
 {
-  name: '小学校', type: 'header', children: [
+  name: '小学校', type: 'lesson', children: [
     {
       name: 'Board Game (Short Version)', type: 'folder', children: [
         {
