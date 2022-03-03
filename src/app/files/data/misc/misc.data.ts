@@ -12,19 +12,19 @@ export const MiscData: TreeNode[] =
       {
         name: 'Templates', type: 'folder', children: [
           {
-            name: 'CalvinHobbesBoardGame.xlsx', type: 'fileExcel'
+            name: 'Template.CalvinHobbesBoardGame.xlsx', type: 'fileExcel'
           },
           {
-            name: 'KarutaTemplate.docx', type: 'fileWord'
+            name: 'Template.Karuta.docx', type: 'fileWord'
           },
           {
-            name: 'SorryBoardGame.xlsx', type: 'fileExcel'
+            name: 'Template.SorryBoardGame.xlsx', type: 'fileExcel'
           },
           {
-            name: 'SorryCards.xlsx', type: 'fileExcel'
+            name: 'Template.SorryCards.xlsx', type: 'fileExcel'
           },
           {
-            name: 'SorrySpecialCardExamples.docx', type: 'fileWord'
+            name: 'Template.SorrySpecialCardExamples.docx', type: 'fileWord'
           }
         ]
       }
