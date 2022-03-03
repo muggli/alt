@@ -6,6 +6,9 @@
                 <span>{{title}}</span>
              </div>
             </mat-card-title>
+            <mat-card-subtitle class="form-sub-header" fxLayoutAlign="center center" *ngIf="subtitle">
+              {{subtitle}}
+            </mat-card-subtitle>
         </mat-card-header>
   
         <mat-divider></mat-divider>

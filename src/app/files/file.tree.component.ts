@@ -21,6 +21,7 @@ export class FileTreeComponent {
 
   @Input() page: string = '';
   title: string = '';
+  subtitle: string = '';
   treeControl = new NestedTreeControl<TreeNode>(node => node.children);
   dataSource = new MatTreeNestedDataSource<TreeNode>();
   loadTreeOnPage: TreeNode[] = [];
@@ -41,7 +42,8 @@ export class FileTreeComponent {
   ngOnInit() {
     switch ( this.page ) {
         case 'jhs-nc1':
-          this.title = "JHS: New Crown 1";
+          this.title = 'Junior High School';
+          this.subtitle = 'New Crown 1';
           this.lessons.push(Nc1Lessons.JhsNc1Lesson00Warmup);
           this.lessons.push(Nc1Lessons.JhsNc1Lesson00GetReady);
           this.lessons.push(Nc1Lessons.JhsNc1Lesson01);
@@ -58,23 +60,28 @@ export class FileTreeComponent {
           this.dataSource.data = this.lessons;
           break;
         case 'jhs-nc2':
-          this.title = "JHS: New Crown 2";
+          this.title = 'Junior High School';
+          this.subtitle = 'New Crown 2';
           break;
         case 'jhs-nc3':
-          this.title = "JHS: New Crown 3";
+          this.title = 'Junior High School';
+          this.subtitle = 'New Crown 3';
           break;
         case 'eigomura':
           this.title = "英語村";
+          this.subtitle = '';
           this.loadTreeOnPage.push(this.EigomuraEsHeader); 
           this.loadTreeOnPage.push(this.EigomuraJhsHeader); 
           this.dataSource.data = this.loadTreeOnPage;
           break;
         case 'misc':
           this.title = "Miscellaneous";
+          this.subtitle = '';
           this.dataSource.data = this.MiscHeader;
           break;
         default:
           this.title = "NO PAGE FOUND";
+          this.subtitle = '';
           this.dataSource.data = [];
     }
   }
