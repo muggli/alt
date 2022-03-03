@@ -5,10 +5,11 @@ import { TreeNode } from './file.tree.data';
 import { faFolderOpen, faChalkboardTeacher, faBook, faFileExcel, faFile, faFileWord, faFilePdf, faFileImage, faFilePowerpoint } from '@fortawesome/free-solid-svg-icons';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogNoFileFound } from '@app/dialog/no.file.found.dialog';
-import * as Nc1Lessons from './data/jhs/nc1/index';
-import * as HolidayLessons from './data/jhs/holiday/index';
-import * as Misc from './data/misc/index';
-import * as Eigomura from './data/eigomura/index';
+import * as Nc1Lessons from './data/jhs/nc1';
+import * as HolidayLessons from './data/jhs/holiday';
+import * as Bunkasai from './data/jhs/bunkasai';
+import * as Misc from './data/misc';
+import * as Eigomura from './data/eigomura';
 
 @Component({
     selector: 'file-tree',
@@ -30,6 +31,7 @@ export class FileTreeComponent {
   EigomuraEsHeader: TreeNode = Eigomura.EigomuraEsHeader;
   EigomuraJhsHeader: TreeNode = Eigomura.EigomuraJhsHeader;
   HolidayHeader: TreeNode[] = HolidayLessons.JhsHolidayLesson;
+  BunkasaiHeader: TreeNode[] = Bunkasai.BunkasaiData;
   MiscHeader: TreeNode[] = Misc.MiscData;
   faFolderOpen = faFolderOpen;
   faChalkboardTeacher = faChalkboardTeacher;
@@ -77,6 +79,7 @@ export class FileTreeComponent {
         case 'jhs-bunkasai':
           this.title = 'Junior High School';
           this.subtitle = '文化祭';
+          this.dataSource.data = this.BunkasaiHeader;
           break;
         case 'eigomura':
           this.title = "英語村";
