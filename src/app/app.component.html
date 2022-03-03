@@ -47,6 +47,8 @@
               <mat-option (click)="changePage('jhs-nc1')">New Crown 1</mat-option>
               <mat-option (click)="changePage('jhs-nc2')">New Crown 2</mat-option>
               <mat-option (click)="changePage('jhs-nc3')">New Crown 3</mat-option>
+              <mat-option (click)="changePage('jhs-holiday')">Holiday Lessons</mat-option>
+              <mat-option (click)="changePage('jhs-bunkasai')">文化祭</mat-option>
             </mat-select>
           </mat-form-field>
         </a>
@@ -60,6 +62,8 @@
       <file-tree *ngIf="page==='jhs-nc1'" [page]="page"></file-tree>
       <file-tree *ngIf="page==='jhs-nc2'" [page]="page"></file-tree>
       <file-tree *ngIf="page==='jhs-nc3'" [page]="page"></file-tree>
+      <file-tree *ngIf="page==='jhs-holiday'" [page]="page"></file-tree>
+      <file-tree *ngIf="page==='jhs-bunkasai'" [page]="page"></file-tree>
       <file-tree *ngIf="page==='eigomura'" [page]="page"></file-tree>
       <file-tree *ngIf="page==='misc'" [page]="page"></file-tree>
     </mat-sidenav-content>

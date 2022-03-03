@@ -67,6 +67,14 @@ export class FileTreeComponent {
           this.title = 'Junior High School';
           this.subtitle = 'New Crown 3';
           break;
+        case 'jhs-holiday':
+          this.title = 'Junior High School';
+          this.subtitle = 'Holiday Lessons';
+          break;
+        case 'jhs-bunkasai':
+          this.title = 'Junior High School';
+          this.subtitle = '文化祭';
+          break;
         case 'eigomura':
           this.title = "英語村";
           this.subtitle = '';
