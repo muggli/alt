@@ -73,6 +73,11 @@ export class FileTreeComponent {
           this.lessons.push(Nc2Lessons.JhsNc2Lesson03);
           this.lessons.push(Nc2Lessons.JhsNc2Lesson04);
           this.lessons.push(Nc2Lessons.JhsNc2Lesson05);
+          this.lessons.push(Nc2Lessons.JhsNc2Lesson06);
+          this.lessons.push(Nc2Lessons.JhsNc2Lesson07);
+          this.lessons.push(Nc2Lessons.JhsNc2Lesson08);
+          this.lessons.push(Nc2Lessons.JhsNc2Lesson99EndOfYear);
+          this.lessons.push(Nc2Lessons.JhsNc2Lesson99Optional);
           this.dataSource.data = this.lessons;
           break;
         case 'jhs-nc3':

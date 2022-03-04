@@ -4,3 +4,8 @@ export * from './jhs.nc2.lesson02.data';
 export * from './jhs.nc2.lesson03.data';
 export * from './jhs.nc2.lesson04.data';
 export * from './jhs.nc2.lesson05.data';
+export * from './jhs.nc2.lesson06.data';
+export * from './jhs.nc2.lesson07.data';
+export * from './jhs.nc2.lesson08.data';
+export * from './jhs.nc2.lesson99.end.of.year.data';
+export * from './jhs.nc2.lesson99.optional.data';
