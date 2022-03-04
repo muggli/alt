@@ -68,6 +68,11 @@ export class FileTreeComponent {
           this.title = 'Junior High School';
           this.subtitle = 'New Crown 2';
           this.lessons.push(Nc2Lessons.JhsNc2Lesson00Warmup);
+          this.lessons.push(Nc2Lessons.JhsNc2Lesson01);
+          this.lessons.push(Nc2Lessons.JhsNc2Lesson02);
+          this.lessons.push(Nc2Lessons.JhsNc2Lesson03);
+          this.lessons.push(Nc2Lessons.JhsNc2Lesson04);
+          this.lessons.push(Nc2Lessons.JhsNc2Lesson05);
           this.dataSource.data = this.lessons;
           break;
         case 'jhs-nc3':
