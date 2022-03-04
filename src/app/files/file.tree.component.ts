@@ -6,6 +6,7 @@ import { faFolderOpen, faChalkboardTeacher, faBook, faFileExcel, faFile, faFileW
 import { MatDialog } from '@angular/material/dialog';
 import { DialogNoFileFound } from '@app/dialog/no.file.found.dialog';
 import * as Nc1Lessons from './data/jhs/nc1';
+import * as Nc2Lessons from './data/jhs/nc2';
 import * as HolidayLessons from './data/jhs/holiday';
 import * as Bunkasai from './data/jhs/bunkasai';
 import * as Misc from './data/misc';
@@ -66,6 +67,8 @@ export class FileTreeComponent {
         case 'jhs-nc2':
           this.title = 'Junior High School';
           this.subtitle = 'New Crown 2';
+          this.lessons.push(Nc2Lessons.JhsNc2Lesson00Warmup);
+          this.dataSource.data = this.lessons;
           break;
         case 'jhs-nc3':
           this.title = 'Junior High School';
