@@ -7,6 +7,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { DialogNoFileFound } from '@app/dialog/no.file.found.dialog';
 import * as Nc1Lessons from './data/jhs/nc1';
 import * as Nc2Lessons from './data/jhs/nc2';
+import * as Nc3Lessons from './data/jhs/nc3';
 import * as HolidayLessons from './data/jhs/holiday';
 import * as Bunkasai from './data/jhs/bunkasai';
 import * as Misc from './data/misc';
@@ -83,6 +84,12 @@ export class FileTreeComponent {
         case 'jhs-nc3':
           this.title = 'Junior High School';
           this.subtitle = 'New Crown 3';
+          this.lessons.push(Nc3Lessons.JhsNc3Lesson01);
+          this.lessons.push(Nc3Lessons.JhsNc3Lesson02);
+          this.lessons.push(Nc3Lessons.JhsNc3Lesson03);
+          this.lessons.push(Nc3Lessons.JhsNc3Lesson04);
+          this.lessons.push(Nc3Lessons.JhsNc3Lesson05);
+          this.dataSource.data = this.lessons;
           break;
         case 'jhs-holiday':
           this.title = 'Junior High School';
