@@ -3,3 +3,8 @@ export * from './jhs.nc3.lesson02.data';
 export * from './jhs.nc3.lesson03.data';
 export * from './jhs.nc3.lesson04.data';
 export * from './jhs.nc3.lesson05.data';
+export * from './jhs.nc3.lesson06.data';
+export * from './jhs.nc3.lesson07.data';
+export * from './jhs.nc3.lesson08.data';
+export * from './jhs.nc3.lesson99.end.of.year.data';
+export * from './jhs.nc3.lesson99.optional.data';

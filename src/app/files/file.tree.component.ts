@@ -89,6 +89,11 @@ export class FileTreeComponent {
           this.lessons.push(Nc3Lessons.JhsNc3Lesson03);
           this.lessons.push(Nc3Lessons.JhsNc3Lesson04);
           this.lessons.push(Nc3Lessons.JhsNc3Lesson05);
+          this.lessons.push(Nc3Lessons.JhsNc3Lesson06);
+          this.lessons.push(Nc3Lessons.JhsNc3Lesson07);
+          this.lessons.push(Nc3Lessons.JhsNc3Lesson08);
+          this.lessons.push(Nc3Lessons.JhsNc3Lesson99EndOfYear);
+          this.lessons.push(Nc3Lessons.JhsNc3Lesson99Optional);
           this.dataSource.data = this.lessons;
           break;
         case 'jhs-holiday':
