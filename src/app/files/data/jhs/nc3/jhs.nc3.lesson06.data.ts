@@ -1,6 +1,6 @@
 import { TreeNode } from '@app/files/file.tree.data';
 
-export const JhsNc3Lesson06: TreeNode =
+export const Lesson06: TreeNode =
   {
     name: 'Lesson 06', type: 'lesson', children: [
       {
